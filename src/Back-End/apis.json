@@ -1,9 +1,264 @@
 {
-
     "financialTerms": [
-        {"term": "termEx", "definition": "defEx" }
+      {
+        "term": "Accounts Payable",
+        "definition": "The amount of money a company owes to its creditors or suppliers for goods and services received."
+      },
+      {
+        "term": "Accounts Receivable",
+        "definition": "The amount of money owed to a company by its customers for goods or services provided."
+      },
+      {
+        "term": "Asset",
+        "definition": "A resource with economic value that an individual, corporation, or country owns or controls with the expectation that it will provide future benefit."
+      },
+      {
+        "term": "Balance Sheet",
+        "definition": "A financial statement that summarizes a company's assets, liabilities, and shareholders' equity at a specific point in time."
+      },
+      {
+        "term": "Capital",
+        "definition": "Financial assets or the financial value of assets, such as funds held in deposit accounts, as well as the tangible machinery and production equipment used in environments such as manufacturing."
+      },
+      {
+        "term": "Cash Flow",
+        "definition": "The total amount of money being transferred into and out of a business, especially as affecting liquidity."
+      },
+      {
+        "term": "Depreciation",
+        "definition": "The reduction in the value of an asset over time, due in particular to wear and tear."
+      },
+      {
+        "term": "Equity",
+        "definition": "The value of the shares issued by a company."
+      },
+      {
+        "term": "Expense",
+        "definition": "The cost required for something; the money spent on something."
+      },
+      {
+        "term": "General Ledger",
+        "definition": "A complete record of financial transactions over the life of a company."
+      },
+      {
+        "term": "Income Statement",
+        "definition": "A financial statement that shows a company's revenues and expenses over a specific period of time."
+      },
+      {
+        "term": "Liability",
+        "definition": "A company's legal financial debts or obligations that arise during the course of business operations."
+      },
+      {
+        "term": "Net Income",
+        "definition": "A company's total earnings (or profit), calculated by subtracting expenses from revenues."
+      },
+      {
+        "term": "Revenue",
+        "definition": "The income generated from normal business operations, usually from the sale of goods and services to customers."
+      },
+      {
+        "term": "Trial Balance",
+        "definition": "A bookkeeping worksheet in which the balances of all ledgers are compiled into debit and credit account column totals that are equal."
+      },
+      {
+        "term": "Accrual Accounting",
+        "definition": "An accounting method where revenue and expenses are recorded when they are earned or incurred, regardless of when cash is exchanged."
+      },
+      {
+        "term": "Break-even Point",
+        "definition": "The point at which total revenue equals total costs, resulting in neither profit nor loss."
+      },
+      {
+        "term": "Cost of Goods Sold (COGS)",
+        "definition": "The direct costs attributable to the production of the goods sold by a company."
+      },
+      {
+        "term": "Dividend",
+        "definition": "A portion of a company's earnings distributed to shareholders."
+      },
+      {
+        "term": "Gross Profit",
+        "definition": "The profit a company makes after deducting the costs associated with making and selling its products."
+      },
+      {
+        "term": "Journal Entry",
+        "definition": "A record of a financial transaction in the accounting system, showing the debit and credit accounts affected."
+      },
+      {
+        "term": "Liquidity",
+        "definition": "The ability of a company to meet its short-term financial obligations using its most liquid assets."
+      },
+      {
+        "term": "Operating Income",
+        "definition": "The profit realized from a business's core operations, excluding deductions of interest and taxes."
+      },
+      {
+        "term": "Retained Earnings",
+        "definition": "The portion of net income that is retained by the company rather than distributed to shareholders as dividends."
+      },
+      {
+        "term": "Working Capital",
+        "definition": "The difference between a company's current assets and current liabilities, used to fund day-to-day operations."
+      },
+      {
+        "term": "Amortization",
+        "definition": "The process of gradually writing off the initial cost of an intangible asset over its useful life."
+      },
+      {
+        "term": "Budget",
+        "definition": "A financial plan for a defined period, often including estimated revenues, expenses, and cash flows."
+      },
+      {
+        "term": "Chart of Accounts",
+        "definition": "A list of all the accounts used by a business to record financial transactions."
+      },
+      {
+        "term": "Debit",
+        "definition": "An entry recording an amount owed, typically on the left side of an account."
+      },
+      {
+        "term": "Credit",
+        "definition": "An entry recording an amount received, typically on the right side of an account."
+      },
+      {
+        "term": "Fixed Asset",
+        "definition": "A long-term tangible asset that is used in the operation of a business and is not expected to be converted into cash within a year."
+      },
+      {
+        "term": "Goodwill",
+        "definition": "An intangible asset that arises when a business is acquired for more than the fair value of its net identifiable assets."
+      },
+      {
+        "term": "Inventory",
+        "definition": "The raw materials, work-in-progress, and finished goods that a company holds for the purpose of sale."
+      },
+      {
+        "term": "Overhead",
+        "definition": "Ongoing business expenses not directly attributed to creating a product or service."
+      },
+      {
+        "term": "Payroll",
+        "definition": "The total amount of wages and salaries paid by a company to its employees."
+      },
+      {
+        "term": "Profit Margin",
+        "definition": "A measure of profitability calculated as net income divided by revenue, expressed as a percentage."
+      },
+      {
+        "term": "Return on Investment (ROI)",
+        "definition": "A performance measure used to evaluate the efficiency of an investment, calculated as net profit divided by the cost of the investment."
+      },
+      {
+        "term": "Tax Liability",
+        "definition": "The total amount of tax debt owed by an individual, corporation, or other entity to a taxing authority."
+      }
     ],
+    "financialRatios": [
+    {
+      "term": "Current Ratio",
+      "definition": "A liquidity ratio that measures a company's ability to pay short-term obligations with its current assets.",
+      "formula": "Current Assets / Current Liabilities"
+    },
+    {
+      "term": "Quick Ratio (Acid-Test Ratio)",
+      "definition": "A liquidity ratio that measures a company's ability to meet short-term obligations with its most liquid assets.",
+      "formula": "(Current Assets - Inventory) / Current Liabilities"
+    },
+    {
+      "term": "Debt-to-Equity Ratio",
+      "definition": "A solvency ratio that compares a company's total liabilities to its shareholder equity.",
+      "formula": "Total Liabilities / Shareholder Equity"
+    },
+    {
+      "term": "Return on Equity (ROE)",
+      "definition": "A profitability ratio that measures the return generated on shareholders' equity.",
+      "formula": "Net Income / Shareholder Equity"
+    },
+    {
+      "term": "Return on Assets (ROA)",
+      "definition": "A profitability ratio that measures how efficiently a company uses its assets to generate profit.",
+      "formula": "Net Income / Total Assets"
+    },
+    {
+      "term": "Gross Profit Margin",
+      "definition": "A profitability ratio that shows the percentage of revenue that exceeds the cost of goods sold (COGS).",
+      "formula": "(Revenue - COGS) / Revenue"
+    },
+    {
+      "term": "Net Profit Margin",
+      "definition": "A profitability ratio that shows the percentage of revenue remaining after all expenses, taxes, and costs are deducted.",
+      "formula": "Net Income / Revenue"
+    },
+    {
+      "term": "Operating Margin",
+      "definition": "A profitability ratio that measures the proportion of revenue left after covering operating expenses.",
+      "formula": "Operating Income / Revenue"
+    },
+    {
+      "term": "Earnings Per Share (EPS)",
+      "definition": "A profitability ratio that measures the portion of a company's profit allocated to each outstanding share of common stock.",
+      "formula": "Net Income / Number of Outstanding Shares"
+    },
+    {
+      "term": "Price-to-Earnings Ratio (P/E Ratio)",
+      "definition": "A valuation ratio that compares a company's current share price to its earnings per share (EPS).",
+      "formula": "Market Value per Share / Earnings per Share"
+    },
+    {
+      "term": "Debt Ratio",
+      "definition": "A solvency ratio that measures the proportion of a company's assets financed by debt.",
+      "formula": "Total Liabilities / Total Assets"
+    },
+    {
+      "term": "Interest Coverage Ratio",
+      "definition": "A solvency ratio that measures a company's ability to pay interest on its debt.",
+      "formula": "Operating Income / Interest Expense"
+    },
+    {
+      "term": "Asset Turnover Ratio",
+      "definition": "An efficiency ratio that measures how effectively a company uses its assets to generate revenue.",
+      "formula": "Revenue / Total Assets"
+    },
+    {
+      "term": "Inventory Turnover Ratio",
+      "definition": "An efficiency ratio that measures how many times a company's inventory is sold and replaced over a period.",
+      "formula": "Cost of Goods Sold (COGS) / Average Inventory"
+    },
+    {
+      "term": "Receivables Turnover Ratio",
+      "definition": "An efficiency ratio that measures how efficiently a company collects its accounts receivable.",
+      "formula": "Net Credit Sales / Average Accounts Receivable"
+    },
+    {
+      "term": "Working Capital Ratio",
+      "definition": "A liquidity ratio that measures a company's ability to cover its short-term liabilities with its short-term assets.",
+      "formula": "Current Assets / Current Liabilities"
+    },
+    {
+      "term": "Dividend Payout Ratio",
+      "definition": "A profitability ratio that shows the proportion of earnings paid out as dividends to shareholders.",
+      "formula": "Dividends / Net Income"
+    },
+    {
+      "term": "Return on Investment (ROI)",
+      "definition": "A profitability ratio that measures the return on an investment relative to its cost.",
+      "formula": "(Net Profit / Cost of Investment) * 100"
+    },
+    {
+      "term": "Cash Ratio",
+      "definition": "A liquidity ratio that measures a company's ability to pay short-term liabilities with cash and cash equivalents.",
+      "formula": "(Cash + Cash Equivalents) / Current Liabilities"
+    },
+    {
+      "term": "Equity Multiplier",
+      "definition": "A solvency ratio that measures the proportion of a company's assets financed by equity.",
+      "formula": "Total Assets / Shareholder Equity"
+    }
+  ],
     "financialAnalysis": [
-        {"report": "reportEx or graphEx", "analysis": "analysisEx"}
+      {
+        "report": "reportEx or graphEx",
+        "analysis": "analysisEx"
+      }
     ]
-}
+  }
