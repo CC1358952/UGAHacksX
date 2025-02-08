@@ -2,26 +2,30 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const deviceWidth = window.innerWidth;
+const deviceHeight = window.innerHeight;
+
+const colors = {
+  purple: '#52006A',
+  navy: '#101820',
+  lavender: '#A992C2',
+  white: '#FFFFFF',
+  gray: '#D1D5DB'
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className = "App-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Yo whats good?
         </p>
+      </div>
+      <div className = "App-main">
         <p>
-          Yo is this working, chat?
+          This is the main content
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
