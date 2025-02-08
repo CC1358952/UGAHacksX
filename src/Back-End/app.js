@@ -7,5 +7,5 @@ if (jsonData) {
     const financialAnalysisArray = jsonData.financialAnalysis; //store analysis in an array
 
     console.log("Financial Terms: ", financialTermsArray);
-    console.log("Financial Analysis: ", fiancialAnalysisArray);
+    console.log("Financial Analysis: ", financialAnalysisArray);
 }
