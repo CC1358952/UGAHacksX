@@ -1,9 +1,0 @@
-{
-
-    "financialTerms": [
-        {"term": "termEx", "definition": "defEx" }
-    ],
-    "financialAnalysis": [
-        {"report": "reportEx or graphEx", "analysis": "analysisEx"}
-    ]
-}

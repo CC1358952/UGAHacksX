@@ -5,4 +5,7 @@ const jsonData = loadData();
 if (jsonData) {
     const financialTermsArray = jsonData.financialTerms; //store terms in array
     const financialAnalysisArray = jsonData.financialAnalysis; //store analysis in an array
+
+    console.log("Financial Terms: ", financialTermsArray);
+    console.log("Financial Analysis: ", fiancialAnalysisArray);
 }
