@@ -125,9 +125,6 @@ function App() {
       <div className = "App-main">
         <div className = "App-quiz">
           <Quiz/>
-          <p>
-            Yo this is a quiz
-          </p>
         </div>
       </div>
     </div>

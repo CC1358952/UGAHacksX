@@ -12,6 +12,16 @@ const Quiz = () => {
         <p>Fina Analysis</p>
     ];
 
+    let index = 0;
+
+    let answers = [ "", "", "", "" ];
+    const pickAnswers = (correctAnswer) => {
+        answers[0] = correctAnswer.definition;
+        for (let i = 1; i < 4; i++){
+            answers[i] = questions.financialTerms[Math.floor(Math.random() * questions.financialTerms.length)].definition;
+        }
+    };
+
     const nextPage = () => {
         setPage(page + 1);
     };
@@ -21,13 +31,31 @@ const Quiz = () => {
     };
 
     return (
-        <div>
-            <h1>Quiz Page {pages[page]}</h1>
-            <button onClick={prevPage} disabled={page === 0}>Previous</button>
-            <button onClick={nextPage} disabled={page >= 3}>Next</button>
-            <p>
-                {questions.financialTerms[page].term}
-            </p>
+        <div className = "quiz-box">
+            <div className = "question-box">    
+                <p>
+                    {questions.financialTerms[index].term}
+                </p>
+            </div>
+            <div className = "answer-container">
+                <div className='answer-row'>
+                    <button className = "answer-box">
+                        {answers[0]}
+                    </button>
+                    <button className = "answer-box">
+                        {answers[1]}
+                    </button>
+                </div>
+                <div className='answer-row'>
+                    <button className = "answer-box">
+                        {answers[2]}
+                    </button>
+                    <button className = "answer-box">
+                        {answers[3]}
+                    </button>
+                </div>
+            </div>
+            <button onClick={() => index+=1 }>Button</button>
         </div>
     );
 };
