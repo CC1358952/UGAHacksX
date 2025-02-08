@@ -67,7 +67,7 @@
 .App-bar {
   display: flex;
   flex-direction: row;
-  background-color: var(--white);
+  background-color: black;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
