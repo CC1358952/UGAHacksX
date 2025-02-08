@@ -39,8 +39,8 @@
   display: flex;
   background-color: var(--lavender);
   flex-grow: 9;
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: 90vh;
+  max-height: 90vh;
   flex-basis: auto;
   flex-direction: column;
   align-items: center;
@@ -72,8 +72,8 @@
   justify-content: center;
   flex-grow: 1;
   flex-basis: auto;
-  min-height: 8vh;
-  max-height: 8vh;
+  min-height: 5vh;
+  max-height: 5vh;
   min-width: 100%;
   max-width: 100%;
 }
