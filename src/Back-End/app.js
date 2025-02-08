@@ -20,4 +20,9 @@ if (jsonData) {
     //console.log(financialTermsArray);
     //console.log(financialAnalysisArray);
     //console.log(financialRatiosArray);
+    //how to access the array:
+    // const firstRatio = financialRatiosArray[0]; // First ratio object
+    //console.log(firstRatio.term); // Output: "Current Ratio"
+    //console.log(firstRatio.definition); // Output: "A liquidity ratio ..."
+    //console.log(firstRatio.formula); // Output: "Current Assets / Current Liabilities"
 }
