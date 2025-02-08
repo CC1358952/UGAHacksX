@@ -17,7 +17,7 @@ if (jsonData) {
         formula: ratio.formula
     })) //store ratios in an array
 
-    console.log(financialTermsArray);
-    console.log(financialAnalysisArray);
-    console.log(financialRatiosArray);
+    //console.log(financialTermsArray);
+    //console.log(financialAnalysisArray);
+    //console.log(financialRatiosArray);
 }
