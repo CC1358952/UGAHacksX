@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import jsonData from './Back-End/apis.json';
+import Quiz from './Quiz';
 
 const deviceWidth = window.innerWidth;
 const deviceHeight = window.innerHeight;
@@ -26,6 +27,7 @@ function App() {
       console.log("Financial Analysis: ", financialAnalysisArray);
     }
   };
+
   return (
     <div className="App">
       <div className = "App-header">
@@ -34,12 +36,21 @@ function App() {
         </p>
       </div>
       <div className = "App-bar">
+        <div className = "spacer"/>
         <button className = "button-bar">
-          Print Arrays
+          Financial Terms
         </button>
+        <button className = "button-bar">
+          Financial Ratios
+        </button>
+        <button className = "button-bar">
+          Financial Analysis
+        </button>
+        <div className = "spacer"/>
       </div>
       <div className = "App-main">
         <div className = "App-quiz">
+          <Quiz/>
           <p>
             Yo this is a quiz
           </p>
