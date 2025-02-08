@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import jsonData from './Back-End/apis.json';
 
 const deviceWidth = window.innerWidth;
 const deviceHeight = window.innerHeight;
@@ -14,17 +15,35 @@ const colors = {
 }
 
 function App() {
+  const printArrays = () => {
+    if(jsonData) {
+      const financialTermsArray = jsonData.financialTerms;
+      const financialRatiosArray = jsonData.financialRatios;
+      const financialAnalysisArray = jsonData.financialAnalysis;
+
+      console.log("Financial Terms:m ", financialTermsArray);
+      console.log("Financial Ratios: ", financialRatiosArray);
+      console.log("Financial Analysis: ", financialAnalysisArray);
+    }
+  };
   return (
     <div className="App">
       <div className = "App-header">
-        <p>
-          Yo whats good?
+        <p style = {{fontWeight: 'bold', fontSize: 24, color: colors.white}}>
+          Financial Learning
         </p>
       </div>
+      <div className = "App-bar">
+        <button className = "button-bar">
+          Print Arrays
+        </button>
+      </div>
       <div className = "App-main">
-        <p>
-          This is the main content
-        </p>
+        <div className = "App-quiz">
+          <p>
+            Yo this is a quiz
+          </p>
+        </div>
       </div>
     </div>
   );

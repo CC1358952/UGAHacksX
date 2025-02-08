@@ -6,6 +6,8 @@
   flex-basis: auto;
   max-height: 100vh;
   min-height: 100vh;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .App-logo {
@@ -22,6 +24,7 @@
 .App-header {
   background-color: var(--purple);
   min-height: 5vh;
+  max-height: 5vh;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -36,20 +39,62 @@
   display: flex;
   background-color: var(--lavender);
   flex-grow: 9;
-  min-height: 93vh;
+  min-height: 100vh;
+  max-height: 100vh;
   flex-basis: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.App-quiz {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: auto;
+  width: 75%;
+  height: 90%;
+  border-radius: 20px;
+  border: 2px solid var(--purple);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.App-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: auto;
+  min-height: 8vh;
+  max-height: 8vh;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }
 
+.button-bar {
+  background-color: var(--white);
+  color: var(--purple);
+  border: none;
+  border-radius: 5px;
+  padding: 2px 2px;
+  margin: 2px;
+  cursor: pointer;
+}
+
 :root{
-  --purple: #52006A;
-  --lavender: #A992C2;
+  --purple: #2E1A47;
+  --lavender: #dcd0ff;
   --white: #FFFFFF;
   --gray: #D1D5DB;
 }
