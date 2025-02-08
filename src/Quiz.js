@@ -26,7 +26,7 @@ const Quiz = () => {
             <button onClick={prevPage} disabled={page === 0}>Previous</button>
             <button onClick={nextPage} disabled={page >= 3}>Next</button>
             <p>
-                Yo this is a quiz
+                {questions.financialTerms[page].term}
             </p>
         </div>
     );
