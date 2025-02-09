@@ -12,7 +12,7 @@ const Calculator = () => {
     const data = [["Category", "Number"], ["Earnings", 10], ["Interest", 10], ["Income Tax", 0], ["Depreciation/Amortization", 0]];
 
     const options = {
-        title: "My Daily Activities",
+        title: "EBITDA Margin",
         pieHole: 0.4, 
         is3D: true, 
         pieStartAngle: 100,
