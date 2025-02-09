@@ -8,6 +8,7 @@ const Quiz = ({ section, userData, setUserData }) => {
 
     useEffect(() => {
         setDisableButton(false);
+        setAnswers(["A", "B", "C", "D"]);
     }, [section]);
 
     const addBadge = (badgeName) => {
