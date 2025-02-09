@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import questions from './Back-End/apis.json';
-import Profile from './Profile';
 
 const Quiz = ({ section }) => {
     const [answers, setAnswers] = useState(["A", "B", "C", "D"]);

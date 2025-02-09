@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Quiz from './Quiz';
 import Calculator from './Calculator';
+import Profile from './Profile';
 
 const colors = {
   purple: '#52006A',
@@ -12,7 +13,6 @@ const colors = {
   gray: '#D1D5DB'
 }
 
-const Profile = () => <div>Profile Page</div>;
 const FinancialTerms = () => <Quiz section="financialTerms" />;
 const FinancialRatios = () => <Quiz section="financialRatios" />;
 const Home = () => <div>Home Page</div>;
