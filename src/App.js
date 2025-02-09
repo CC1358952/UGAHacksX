@@ -113,6 +113,9 @@ function App() {
       <div className = "App-bar">
         <div className = "spacer"/>
         <button className = "button-bar">
+          EBITDA Calculator
+        </button>
+        <button className = "button-bar">
           Financial Terms
         </button>
         <button className = "button-bar">
