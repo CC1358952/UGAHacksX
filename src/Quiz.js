@@ -4,6 +4,7 @@ import questions from './Back-End/apis.json';
 
 const Quiz = () => {
     const [page, setPage] = useState(0);
+    const [index, setIndex] = useState(0);
 
     const pages = [
         <p>Home</p>,
@@ -12,9 +13,8 @@ const Quiz = () => {
         <p>Fina Analysis</p>
     ];
 
-    let index = 0;
+    const [answers, setAnswers] = useState([]);
 
-    let answers = [ "", "", "", "" ];
     const pickAnswers = (correctAnswer) => {
         answers[0] = correctAnswer.definition;
         for (let i = 1; i < 4; i++){
@@ -22,6 +22,12 @@ const Quiz = () => {
         }
     };
 
+    const nextAnswers = () => {
+        setAnswers(answers[0]);
+    };
+    const nextIndex = () => {
+        setIndex(index + 1);
+    };
     const nextPage = () => {
         setPage(page + 1);
     };
@@ -55,7 +61,7 @@ const Quiz = () => {
                     </button>
                 </div>
             </div>
-            <button onClick={() => index+=1 }>Button</button>
+            <button onClick={() => nextIndex()}>Button</button>
         </div>
     );
 };
