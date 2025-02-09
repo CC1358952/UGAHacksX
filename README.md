@@ -20,10 +20,10 @@ An app created during UGAHacksX 2/7-2/9/2025 meant to gamify learning about fina
 
 ## Screenshots
 
-![EBITDA Calculator](https://drive.google.com/file/d/1nQtyH3D3-U6m99I9m1Aup1Kb82dxn8r-/view?usp=sharing)
-![Financial Terms Quiz](https://drive.google.com/file/d/1jCH2BFwYxq85ixxwuumMyJ-_61PSckHx/view?usp=sharing)
-![Financial Ratios Quiz](https://drive.google.com/file/d/1VunIpDqhkaxgZBzJdNy-Y1J40Lwt4vgv/view?usp=sharing)
-![Profile Screen](https://drive.google.com/file/d/1hFLQT5e-jt5fSUO21VDDX61sO4DW39xe/view?usp=sharing)
+![EBITDA Calculator](chart.png)
+![Financial Terms Quiz](terms.png)
+![Financial Ratios Quiz](ratios.png)
+![Profile Screen](profile.png)
 
 
 ## UGAHacksX Questions
