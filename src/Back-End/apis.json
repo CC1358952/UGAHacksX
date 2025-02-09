@@ -257,11 +257,5 @@
       "definition": "A solvency ratio that measures the proportion of a company's assets financed by equity.",
       "formula": "Total Assets / Shareholder Equity"
     }
-  ],
-    "financialAnalysis": [
-      {
-        "report": "reportEx or graphEx",
-        "analysis": "analysisEx"
-      }
-    ]
+  ]
 }
