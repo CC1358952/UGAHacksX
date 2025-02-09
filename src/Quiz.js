@@ -58,20 +58,24 @@ const Quiz = ({ section, userData, setUserData }) => {
             const newScore = userData.score + 1;
             const newQuestionsAttempted = userData.questionsAttempted + 1;
             const newQuestionsCorrect = userData.questionsCorrect + 1;
+            const newStreak = userData.streak + 1;
             setUserData(prevData => ({
               ...prevData,
               score: newScore,
               questionsAttempted: newQuestionsAttempted,
-              questionsCorrect: newQuestionsCorrect
+              questionsCorrect: newQuestionsCorrect,
+              streak: newStreak
             }));
             alert("Correct!");
             checkForMilestone(newScore);
             pickCorrectAnswer();
         } else {
             const newQuestionsAttempted = userData.questionsAttempted + 1;
+            const newStreak = 0;
             setUserData(prevData => ({
             ...prevData,
-            questionsAttempted: newQuestionsAttempted
+            questionsAttempted: newQuestionsAttempted,
+            streak: newStreak
             }));
             alert("Incorrect!");
             pickCorrectAnswer();

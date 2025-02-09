@@ -20,7 +20,8 @@ function App() {
       score: 0,
       badges: [],
       questionsAttempted: 0,
-      questionsCorrect: 0
+      questionsCorrect: 0,
+      streak: 0
     };
   });
 
