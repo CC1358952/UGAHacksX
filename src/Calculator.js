@@ -36,7 +36,7 @@ const Calculator = () => {
             <button onClick={calculateResult}>Calculate</button>
             
             {/* Result */}
-            <h2>Result: {result}</h2>
+            <h2>EBITDA Margin: {result}%</h2>
         </div>
     );
 
