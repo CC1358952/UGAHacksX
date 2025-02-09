@@ -1,12 +1,8 @@
-import React, { Component, useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import jsonData from './Back-End/apis.json';
 import Quiz from './Quiz';
 import Calculator from './Calculator';
-
-const deviceWidth = window.innerWidth;
-const deviceHeight = window.innerHeight;
 
 const colors = {
   purple: '#52006A',
@@ -16,38 +12,41 @@ const colors = {
   gray: '#D1D5DB'
 }
 
-function App() {
-  
+const Profile = () => <div>Profile Page</div>;
+const FinancialTerms = () => <Quiz section="financialTerms" />;
+const FinancialRatios = () => <Quiz section="financialRatios" />;
+const Home = () => <div>Home Page</div>;
 
+function App() {
   return (
-    <div className="App">
-      <div className = "App-header">
-        <p style = {{fontWeight: 'bold', fontSize: 24, color: colors.white}}>
-          Financial Learning
-        </p>
-      </div>
-      <div className = "App-bar">
-        <div className = "spacer"/>
-        <button className = "button-bar">
-          EBITDA Calculator
-        </button>
-        <button className = "button-bar">
-          Financial Terms
-        </button>
-        <button className = "button-bar">
-          Financial Ratios
-        </button>
-        <button className = "button-bar">
-          Financial Analysis
-        </button>
-        <div className = "spacer"/>
-      </div>
-      <div className = "App-main">
-        <div className = "App-quiz">
-          <Calculator/>
+    <Router>
+      <div className="App">
+        <div className="App-header">
+          <p style={{ fontWeight: 'bold', fontSize: 24, color: colors.white }}>
+            Financial Learning
+          </p>
+        </div>
+        <div className="App-bar">
+          <div className="spacer" />
+          <Link to="/profile" className="button-bar">Profile</Link>
+          <Link to="/financial-terms" className="button-bar">Financial Terms</Link>
+          <Link to="/financial-ratios" className="button-bar">Financial Ratios</Link>
+          <Link to="/ebitda-calculator" className="button-bar">EBITDA Calculator</Link>
+          <div className="spacer" />
+        </div>
+        <div className="App-main">
+          <div className="App-quiz">
+            <Routes>
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/financial-terms" element={<FinancialTerms />} />
+              <Route path="/financial-ratios" element={<FinancialRatios />} />
+              <Route path="/ebitda-calculator" element={<Calculator />} />
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
