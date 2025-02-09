@@ -2,7 +2,7 @@ import React from 'react';
 
 const Profile = ({ userData }) => {
     if (!userData) {
-        return <p>Loading...</p>;
+        return <p>No badges earned yet.</p>;
     }
 
     return (
