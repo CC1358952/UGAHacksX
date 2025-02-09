@@ -13,7 +13,7 @@ const Quiz = () => {
         <p>Fina Analysis</p>
     ];
 
-    const [answers, setAnswers] = useState([]);
+    const [answers, setAnswers] = useState(["A","B","C","D"]);
 
     const pickAnswers = (correctAnswer) => {
         answers[0] = correctAnswer.definition;
@@ -22,8 +22,8 @@ const Quiz = () => {
         }
     };
 
-    const nextAnswers = () => {
-        setAnswers(answers[0]);
+    setAnswers = (correctAnswer) => {
+        pickAnswers(correctAnswer);
     };
     const nextIndex = () => {
         setIndex(index + 1);
@@ -61,7 +61,7 @@ const Quiz = () => {
                     </button>
                 </div>
             </div>
-            <button onClick={() => nextIndex()}>Button</button>
+            <button onClick={() => setAnswers(questions.financialTerms[index])}>Button</button>
         </div>
     );
 };
