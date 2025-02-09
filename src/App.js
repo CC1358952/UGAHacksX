@@ -17,7 +17,7 @@ const colors = {
 }
 
 function App() {
-
+/**
   const [userData, setUserData] = useState(() => {
     const savedData = localStorage.getItem('userData');
     if (savedData) {
@@ -31,10 +31,12 @@ function App() {
       };
     }
   });
+  
 
   useEffect(() => {
     localStorage.setItem('userData', JSON.stringify(userData));
   }, [userData]);
+  
 
   const addBadge = (badgeName) => {
     if (!userData.badges.some(badge => badge.badgeName === badgeName)) {
@@ -65,6 +67,7 @@ function App() {
     if (streak === 8) milestone6();
     if (streak === 15) milestone7();
   };
+  
 
   const handleCorrectAnswer = () => {
     const newScore = userData.score + 1;
@@ -88,21 +91,7 @@ function App() {
     }));
     alert('Incorrect answer!');
   };
-
-  /**
-  const printArrays = () => {
-    if(jsonData) {
-      const financialTermsArray = jsonData.financialTerms;
-      const financialRatiosArray = jsonData.financialRatios;
-      const financialAnalysisArray = jsonData.financialAnalysis;
-
-      console.log("Financial Terms:m ", financialTermsArray);
-      console.log("Financial Ratios: ", financialRatiosArray);
-      console.log("Financial Analysis: ", financialAnalysisArray);
-    }
-  };
-  */
-
+*/
 
   return (
     <div className="App">
