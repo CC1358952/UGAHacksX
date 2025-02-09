@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import jsonData from './Back-End/apis.json';
 import Quiz from './Quiz';
+import Calculator from './Calculator';
 
 const deviceWidth = window.innerWidth;
 const deviceHeight = window.innerHeight;
@@ -124,7 +125,7 @@ function App() {
       </div>
       <div className = "App-main">
         <div className = "App-quiz">
-          <Quiz/>
+          <Calculator/>
         </div>
       </div>
     </div>
