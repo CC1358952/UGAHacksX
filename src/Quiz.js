@@ -1,26 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import questions from './Back-End/apis.json';
 
-const Quiz = ({ section }) => {
+const Quiz = ({ section, userData, setUserData }) => {
     const [answers, setAnswers] = useState(["A", "B", "C", "D"]);
     const [correctIndex, setCorrectIndex] = useState(0);
-    const [userData, setUserData] = useState(() => {
-        const savedData = localStorage.getItem('userData');
-        if (savedData) {
-          return JSON.parse(savedData);
-        } else {
-          return { 
-            score: 0,
-            badges: [],
-            questionsAttempted: 0,
-            questionsCorrect: 0
-          };
-        }
-      });
-
-    useEffect(() => {
-        localStorage.setItem('userData', JSON.stringify(userData));
-    }, [userData]);
 
     const addBadge = (badgeName) => {
         if (!userData.badges.some(badge => badge.badgeName === badgeName)) {

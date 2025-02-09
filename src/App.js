@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Quiz from './Quiz';
@@ -13,11 +13,21 @@ const colors = {
   gray: '#D1D5DB'
 }
 
-const FinancialTerms = () => <Quiz section="financialTerms" />;
-const FinancialRatios = () => <Quiz section="financialRatios" />;
-const Home = () => <div>Home Page</div>;
-
 function App() {
+  const [userData, setUserData] = useState(() => {
+    const savedData = localStorage.getItem('userData');
+    return savedData ? JSON.parse(savedData) : {
+      score: 0,
+      badges: [],
+      questionsAttempted: 0,
+      questionsCorrect: 0
+    };
+  });
+
+  useEffect(() => {
+    localStorage.setItem('userData', JSON.stringify(userData));
+  }, [userData]);
+
   return (
     <Router>
       <div className="App">
@@ -37,9 +47,9 @@ function App() {
         <div className="App-main">
           <div className="App-quiz">
             <Routes>
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/financial-terms" element={<FinancialTerms />} />
-              <Route path="/financial-ratios" element={<FinancialRatios />} />
+              <Route path="/profile" element={<Profile userData={userData} />} />
+              <Route path="/financial-terms" element={<Quiz section="financialTerms" userData={userData} setUserData={setUserData} />} />
+              <Route path="/financial-ratios" element={<Quiz section="financialRatios" userData={userData} setUserData={setUserData} />} />
               <Route path="/ebitda-calculator" element={<Calculator />} />
               <Route path="/" element={<Home />} />
             </Routes>
@@ -49,5 +59,7 @@ function App() {
     </Router>
   );
 }
+
+const Home = () => <div>Home Page</div>;
 
 export default App;
