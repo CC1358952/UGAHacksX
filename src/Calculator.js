@@ -27,16 +27,16 @@ const Calculator = () => {
         <div>
             <h1>Calculator</h1>
             {/* Input Fields */}
-            <input type="number" value={num1} onChange={(e) => setNum1(e.target.value)} placeholder="Enter Sales (+)" />
-            <input type="number" value={num2} onChange={(e) => setNum2(e.target.value)} placeholder="Enter Row Material Costs (-)" />
-            <input type="number" value={num3} onChange={(e) => setNum3(e.target.value)} placeholder="Enter Employee Costs (-)" />
-            <input type="number" value={num4} onChange={(e) => setNum4(e.target.value)} placeholder="Enter Other Operating Expenses (-)" />
+            <input type="number" value={num1} onChange={(e) => setNum1(e.target.value)} placeholder="Earnings (+)" />
+            <input type="number" value={num2} onChange={(e) => setNum2(e.target.value)} placeholder="Interest (-)" />
+            <input type="number" value={num3} onChange={(e) => setNum3(e.target.value)} placeholder="Income Tax (-)" />
+            <input type="number" value={num4} onChange={(e) => setNum4(e.target.value)} placeholder="Depreciation/Amortization (-)" />
 
             {/* Calculate Button */}
             <button onClick={calculateResult}>Calculate</button>
             
             {/* Result */}
-            <h2>Result: {result}</h2>
+            <h2>EBITDA Margin: {result}%</h2>
         </div>
     );
 
