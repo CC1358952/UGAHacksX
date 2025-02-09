@@ -4,6 +4,11 @@ import questions from './Back-End/apis.json';
 const Quiz = ({ section, userData, setUserData }) => {
     const [answers, setAnswers] = useState(["A", "B", "C", "D"]);
     const [correctIndex, setCorrectIndex] = useState(0);
+    const [disableButton, setDisableButton] = useState(false);
+
+    useEffect(() => {
+        setDisableButton(false);
+    }, [section]);
 
     const addBadge = (badgeName) => {
         if (!userData.badges.some(badge => badge.badgeName === badgeName)) {
@@ -82,6 +87,11 @@ const Quiz = ({ section, userData, setUserData }) => {
         }
     };
 
+    const handleClick = () => {
+        setDisableButton(true);
+        pickCorrectAnswer();
+    };
+
     return (
         <div className="quiz-box">
             <div className="question-box">    
@@ -99,7 +109,7 @@ const Quiz = ({ section, userData, setUserData }) => {
                     <button className="answer-box" onClick={() => verifyAnswer(answers[3])}>{answers[3]}</button>
                 </div>
             </div>
-            <button onClick={pickCorrectAnswer}>Get Answers</button>
+            <button disabled={disableButton} onClick={handleClick}>Get Answers</button>
         </div>
     );
 };
