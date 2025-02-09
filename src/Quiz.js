@@ -67,7 +67,7 @@ const Quiz = ({ section, userData, setUserData }) => {
               streak: newStreak
             }));
             alert("Correct!");
-            checkForMilestone(newScore);
+            checkForMilestone(newScore, newStreak);
             pickCorrectAnswer();
         } else {
             const newQuestionsAttempted = userData.questionsAttempted + 1;
