@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import questions from './Back-End/apis.json';
 
 const Quiz = () => {
-    const [page, setPage] = useState(0);
-    const [index, setIndex] = useState(0);
     const [answers, setAnswers] = useState(["A", "B", "C", "D"]);
+    const [correctIndex, setCorrectIndex] = useState(0);
 
-    const pages = [
-        <p>Home</p>,
-        <p>Fina Terms</p>,
-        <p>Fina Ratios</p>,
-        <p>Fina Analysis</p>
-    ];
+    const pickCorrectAnswer = () => {
+        const randomIndex = Math.floor(Math.random() * questions.financialTerms.length);
+        setCorrectIndex(randomIndex);
+        pickAnswers(questions.financialTerms[randomIndex]);
+    };
 
     const pickAnswers = (correctAnswer) => {
+        if (!correctAnswer) return;
+
         let newAnswers = [correctAnswer.definition];
         const incorrectAnswers = questions.financialTerms
             .filter(term => term.definition !== correctAnswer.definition) // Avoid duplicate correct answer
@@ -25,23 +25,11 @@ const Quiz = () => {
         setAnswers(newAnswers);
     };
 
-    const nextIndex = () => {
-        setIndex(prevIndex => prevIndex + 1);
-    };
-
-    const nextPage = () => {
-        setPage(prevPage => prevPage + 1);
-    };
-
-    const prevPage = () => {
-        setPage(prevPage => prevPage - 1);
-    };
-
     return (
         <div className="quiz-box">
             <div className="question-box">    
                 <p>
-                    {questions.financialTerms[index]?.term}
+                    {questions.financialTerms[correctIndex]?.term}
                 </p>
             </div>
             <div className="answer-container">
@@ -54,9 +42,7 @@ const Quiz = () => {
                     <button className="answer-box">{answers[3]}</button>
                 </div>
             </div>
-            <button onClick={() => pickAnswers(questions.financialTerms[index])}>
-                Get Answers
-            </button>
+            <button onClick={pickCorrectAnswer}>Get Answers</button>
         </div>
     );
 };
