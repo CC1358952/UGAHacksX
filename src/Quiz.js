@@ -25,6 +25,16 @@ const Quiz = () => {
         setAnswers(newAnswers);
     };
 
+    const verifyAnswer = (answer) => {
+        if(answer === questions.financialTerms[correctIndex].definition) {
+            alert("Correct!");
+            pickCorrectAnswer();
+        } else {
+            alert("Incorrect!");
+            pickCorrectAnswer();
+        }
+    };
+
     return (
         <div className="quiz-box">
             <div className="question-box">    
@@ -34,12 +44,12 @@ const Quiz = () => {
             </div>
             <div className="answer-container">
                 <div className='answer-row'>
-                    <button className="answer-box">{answers[0]}</button>
-                    <button className="answer-box">{answers[1]}</button>
+                    <button className="answer-box" onClick={() => verifyAnswer(answers[0])}>{answers[0]}</button>
+                    <button className="answer-box" onClick={() => verifyAnswer(answers[1])}>{answers[1]}</button>
                 </div>
                 <div className='answer-row'>
-                    <button className="answer-box">{answers[2]}</button>
-                    <button className="answer-box">{answers[3]}</button>
+                    <button className="answer-box" onClick={() => verifyAnswer(answers[2])}>{answers[2]}</button>
+                    <button className="answer-box" onClick={() => verifyAnswer(answers[3])}>{answers[3]}</button>
                 </div>
             </div>
             <button onClick={pickCorrectAnswer}>Get Answers</button>
