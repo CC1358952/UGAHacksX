@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Quiz from './Quiz';
 import Calculator from './Calculator';
-import Profile from './Profile';
+import UserProfile from './UserProfile';
 
 const colors = {
   purple: '#52006A',
