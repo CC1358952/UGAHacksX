@@ -12,7 +12,7 @@ const Profile = ({userData}) => {
 
                         <div key={index} style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '5px' }}>
                             <strong>{badge.badgeName}</strong>
-                            <div>Earned on: {newDate(badge.dateEarned).toLocaleDataString()}</div>
+                            <div>Earned on: {new Date(badge.dateEarned).toLocaleDataString()}</div>
                         </div>
                     ))}
                 </div>

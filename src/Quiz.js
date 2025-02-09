@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import questions from './Back-End/apis.json';
 import Profile from './profile';
 
