@@ -20,6 +20,10 @@ const Profile = ({ userData }) => {
                     ))}
                 </div>
             )}
+            <h2>User Stats</h2>
+            <p>Questions Attempted: </p>
+            <p>Questions Correct: </p>
+            <p>COrrect Answer Percentage: </p>
         </div>
     );
 };
