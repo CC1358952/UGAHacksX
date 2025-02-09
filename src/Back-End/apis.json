@@ -159,109 +159,83 @@
     "financialRatios": [
     {
       "term": "Current Ratio",
-      "definition": "A liquidity ratio that measures a company's ability to pay short-term obligations with its current assets.",
-      "formula": "Current Assets / Current Liabilities"
+      "definition": "Current Assets / Current Liabilities"
     },
     {
       "term": "Quick Ratio (Acid-Test Ratio)",
-      "definition": "A liquidity ratio that measures a company's ability to meet short-term obligations with its most liquid assets.",
-      "formula": "(Current Assets - Inventory) / Current Liabilities"
+      "definition": "(Current Assets - Inventory) / Current Liabilities"
     },
     {
       "term": "Debt-to-Equity Ratio",
-      "definition": "A solvency ratio that compares a company's total liabilities to its shareholder equity.",
-      "formula": "Total Liabilities / Shareholder Equity"
+      "definition": "Total Liabilities / Shareholder Equity"
     },
     {
       "term": "Return on Equity (ROE)",
-      "definition": "A profitability ratio that measures the return generated on shareholders' equity.",
-      "formula": "Net Income / Shareholder Equity"
+      "definition": "Net Income / Shareholder Equity"
     },
     {
       "term": "Return on Assets (ROA)",
-      "definition": "A profitability ratio that measures how efficiently a company uses its assets to generate profit.",
-      "formula": "Net Income / Total Assets"
+      "definition": "Net Income / Total Assets"
     },
     {
       "term": "Gross Profit Margin",
-      "definition": "A profitability ratio that shows the percentage of revenue that exceeds the cost of goods sold (COGS).",
-      "formula": "(Revenue - COGS) / Revenue"
+      "definition": "(Revenue - COGS) / Revenue"
     },
     {
       "term": "Net Profit Margin",
-      "definition": "A profitability ratio that shows the percentage of revenue remaining after all expenses, taxes, and costs are deducted.",
-      "formula": "Net Income / Revenue"
+      "definition": "Net Income / Revenue"
     },
     {
       "term": "Operating Margin",
-      "definition": "A profitability ratio that measures the proportion of revenue left after covering operating expenses.",
-      "formula": "Operating Income / Revenue"
+      "definition": "Operating Income / Revenue"
     },
     {
       "term": "Earnings Per Share (EPS)",
-      "definition": "A profitability ratio that measures the portion of a company's profit allocated to each outstanding share of common stock.",
-      "formula": "Net Income / Number of Outstanding Shares"
+      "definition": "Net Income / Number of Outstanding Shares"
     },
     {
       "term": "Price-to-Earnings Ratio (P/E Ratio)",
-      "definition": "A valuation ratio that compares a company's current share price to its earnings per share (EPS).",
-      "formula": "Market Value per Share / Earnings per Share"
+      "definition": "Market Value per Share / Earnings per Share"
     },
     {
       "term": "Debt Ratio",
-      "definition": "A solvency ratio that measures the proportion of a company's assets financed by debt.",
-      "formula": "Total Liabilities / Total Assets"
+      "definition": "Total Liabilities / Total Assets"
     },
     {
       "term": "Interest Coverage Ratio",
-      "definition": "A solvency ratio that measures a company's ability to pay interest on its debt.",
-      "formula": "Operating Income / Interest Expense"
+      "definition": "Operating Income / Interest Expense"
     },
     {
       "term": "Asset Turnover Ratio",
-      "definition": "An efficiency ratio that measures how effectively a company uses its assets to generate revenue.",
-      "formula": "Revenue / Total Assets"
+      "definition": "Revenue / Total Assets"
     },
     {
       "term": "Inventory Turnover Ratio",
-      "definition": "An efficiency ratio that measures how many times a company's inventory is sold and replaced over a period.",
-      "formula": "Cost of Goods Sold (COGS) / Average Inventory"
+      "definition": "Cost of Goods Sold (COGS) / Average Inventory"
     },
     {
       "term": "Receivables Turnover Ratio",
-      "definition": "An efficiency ratio that measures how efficiently a company collects its accounts receivable.",
-      "formula": "Net Credit Sales / Average Accounts Receivable"
+      "definition": "Net Credit Sales / Average Accounts Receivable"
     },
     {
       "term": "Working Capital Ratio",
-      "definition": "A liquidity ratio that measures a company's ability to cover its short-term liabilities with its short-term assets.",
-      "formula": "Current Assets / Current Liabilities"
+      "definition": "Current Assets / Current Liabilities"
     },
     {
       "term": "Dividend Payout Ratio",
-      "definition": "A profitability ratio that shows the proportion of earnings paid out as dividends to shareholders.",
-      "formula": "Dividends / Net Income"
+      "definition": "Dividends / Net Income"
     },
     {
       "term": "Return on Investment (ROI)",
-      "definition": "A profitability ratio that measures the return on an investment relative to its cost.",
-      "formula": "(Net Profit / Cost of Investment) * 100"
+      "definition": "(Net Profit / Cost of Investment) * 100"
     },
     {
       "term": "Cash Ratio",
-      "definition": "A liquidity ratio that measures a company's ability to pay short-term liabilities with cash and cash equivalents.",
-      "formula": "(Cash + Cash Equivalents) / Current Liabilities"
+      "definition": "(Cash + Cash Equivalents) / Current Liabilities"
     },
     {
       "term": "Equity Multiplier",
-      "definition": "A solvency ratio that measures the proportion of a company's assets financed by equity.",
-      "formula": "Total Assets / Shareholder Equity"
+      "definition": "Total Assets / Shareholder Equity"
     }
-  ],
-    "financialAnalysis": [
-      {
-        "report": "reportEx or graphEx",
-        "analysis": "analysisEx"
-      }
-    ]
+  ]
 }
