@@ -89,7 +89,7 @@ function App() {
     alert('Incorrect answer!');
   };
 
-
+  /**
   const printArrays = () => {
     if(jsonData) {
       const financialTermsArray = jsonData.financialTerms;
@@ -101,6 +101,7 @@ function App() {
       console.log("Financial Analysis: ", financialAnalysisArray);
     }
   };
+  */
 
 
   return (
